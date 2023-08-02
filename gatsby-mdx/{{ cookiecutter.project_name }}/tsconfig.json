@@ -1,0 +1,23 @@
+{
+  "include": ["./src/**/*", "./gatsby-node.ts"],
+  "compilerOptions": {
+    "target": "ES6",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["DOM", "ES2015", "ES2017"],
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@posts/*": ["posts/*"],
+      "@hooks/*": ["hooks/*"],
+      "@templates/*": ["templates/*"],
+    }
+  }
+}
